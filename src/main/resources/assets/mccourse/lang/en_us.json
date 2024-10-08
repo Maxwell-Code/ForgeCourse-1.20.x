@@ -2,5 +2,6 @@
   "item.mccourse.draconite": "Draconite",
   "item.mccourse.raw_draconite": "Raw Draconite",
 
-  "block.mccourse.draconite.block": "Block of Draconite"
+  "block.mccourse.draconite_block": "Block of Draconite",
+  "block.mccourse.raw_draconite_block": "Block of Raw Draconite"
 }
