@@ -1,6 +1,6 @@
-package Item;
+package net.maxwe.mccourse.Item;
 
-import net.maxwe.MCCourseMod.MCCourseMod;
+import net.maxwe.mccourse.MCCourseMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,7 +13,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> DRACONITE = ITEMS.register("draconite",
             () -> new Item(new Item.Properties().stacksTo(16)));
-    public static final RegistryObject<Item> RAW_DRACONITE = ITEMS.register("raw_draconite.json",
+    public static final RegistryObject<Item> RAW_DRACONITE = ITEMS.register("raw_draconite",
             () -> new Item(new Item.Properties()));
 
 

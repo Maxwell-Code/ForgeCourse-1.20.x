@@ -1,8 +1,8 @@
-package net.maxwe.MCCourseMod;
+package net.maxwe.mccourse;
 
-import Item.ModItems;
+import net.maxwe.mccourse.Item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
+import net.maxwe.mccourse.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,6 +26,7 @@ public class MCCourseMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the common setup method to the mod event bus
         modEventBus.addListener(this::commonSetup);
@@ -49,6 +50,9 @@ public class MCCourseMod {
             event.accept(ModItems.DRACONITE);
             event.accept(ModItems.RAW_DRACONITE);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+            event.accept(ModBlocks.DRACONITE_BLOCK);
         // Your logic to add items to a tab here
         LOGGER.info("Adding items to creative tab for {}", MOD_ID);
     }
