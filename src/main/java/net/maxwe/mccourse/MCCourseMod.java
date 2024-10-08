@@ -52,8 +52,8 @@ public class MCCourseMod {
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-            event.accept(ModBlocks.DRACONITE_BLOCK);
-            event.accept(ModBlocks.RAW_DRACONITE_BLOCK);
+event.accept(ModBlocks.DRACONITE_BLOCK);
+event.accept(ModBlocks.RAW_DRACONITE_BLOCK);
 
         // Your logic to add items to a tab here
         LOGGER.info("Adding items to creative tab for {}", MOD_ID);
