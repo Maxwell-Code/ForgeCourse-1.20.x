@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mccourse:draconite_block",
+    "mccourse:draconite_ore",
+    "mccourse:raw_draconite_block"
+  ]
+}

@@ -3,5 +3,11 @@
   "item.mccourse.raw_draconite": "Raw Draconite",
 
   "block.mccourse.draconite_block": "Block of Draconite",
-  "block.mccourse.raw_draconite_block": "Block of Raw Draconite"
+  "block.mccourse.raw_draconite_block": "Block of Raw Draconite",
+  "block.mccourse.deepslate_draconite_ore": "Deepslate Draconite Ore",
+  "block.mccourse.draconite_ore": "Draconite Ore",
+  "block.mccourse.nether_draconite_ore": "Nether Draconite Ore",
+  "block.mccourse.end_stone_draconite_ore": "End Stone Draconite Ore",
+
+  "creativetab.course_tab": "Course Tab"
 }

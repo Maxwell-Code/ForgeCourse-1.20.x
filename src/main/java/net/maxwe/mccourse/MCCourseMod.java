@@ -1,5 +1,6 @@
 package net.maxwe.mccourse;
 
+import net.maxwe.mccourse.Item.ModCreativeModeTabs;
 import net.maxwe.mccourse.Item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.maxwe.mccourse.block.ModBlocks;
@@ -24,6 +25,8 @@ public class MCCourseMod {
 
     public MCCourseMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
