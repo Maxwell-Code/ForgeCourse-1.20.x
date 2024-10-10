@@ -1,5 +1,6 @@
 package net.maxwe.mccourse.Item;
 
+import net.maxwe.mccourse.Item.custom.MetalDetectorItem;
 import net.maxwe.mccourse.MCCourseMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +16,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> RAW_DRACONITE = ITEMS.register("raw_draconite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(250)));
 
 
     public static void  register(IEventBus eventBus) {

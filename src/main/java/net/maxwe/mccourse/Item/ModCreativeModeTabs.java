@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModItems.DRACONITE.get());
                         output.accept(ModItems.RAW_DRACONITE.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
 
                         output.accept(ModBlocks.DRACONITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_DRACONITE_BLOCK.get());
