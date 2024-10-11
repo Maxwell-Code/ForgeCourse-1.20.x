@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.END_STONE_DRACONITE_ORE.get());
                         output.accept(ModBlocks.NETHER_DRACONITE_ORE.get());
                         output.accept(ModBlocks.DRACONITE_ORE.get());
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
 
 
 

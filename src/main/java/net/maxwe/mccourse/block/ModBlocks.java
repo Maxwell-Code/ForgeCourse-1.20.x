@@ -2,6 +2,7 @@ package net.maxwe.mccourse.block;
 
 import net.maxwe.mccourse.Item.ModItems;
 import net.maxwe.mccourse.MCCourseMod;
+import net.maxwe.mccourse.block.custom.SoundBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,7 +25,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
 
     public static final RegistryObject<Block> RAW_DRACONITE_BLOCK = registerBlock("raw_draconite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK)));
 
     public static final RegistryObject<Block> DEEPSLATE_DRACONITE_ORE = registerBlock("deepslate_draconite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE), UniformInt.of(4,7)));
@@ -37,6 +38,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> NETHER_DRACONITE_ORE = registerBlock("nether_draconite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE), UniformInt.of(2,3)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
