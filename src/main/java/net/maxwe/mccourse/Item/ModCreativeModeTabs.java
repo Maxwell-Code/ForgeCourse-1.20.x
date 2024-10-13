@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DRACONITE.get());
                         output.accept(ModItems.RAW_DRACONITE.get());
                         output.accept(ModItems.METAL_DETECTOR.get());
+                        output.accept(ModItems.KOHLRABI.get());
+                        output.accept(ModItems.PEAT_BRICK.get());
 
                         output.accept(ModBlocks.DRACONITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_DRACONITE_BLOCK.get());
@@ -30,8 +32,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.NETHER_DRACONITE_ORE.get());
                         output.accept(ModBlocks.DRACONITE_ORE.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
-
-
 
                     }).build());
 
