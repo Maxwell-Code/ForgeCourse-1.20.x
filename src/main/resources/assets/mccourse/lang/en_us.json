@@ -13,5 +13,11 @@
   "block.mccourse.end_stone_draconite_ore": "End Stone Draconite Ore",
   "block.mccourse.sound_block": "Sound Block",
 
+  "tooltip.mccourse.metal_detector.tooltip.shift": "Interact with a Block to Detect for valuables",
+  "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more info",
+  "tooltip.mccourse.sound_block": "Plays sounds when stepped on or interacted with",
+
   "creativetab.course_tab": "Course Tab"
+
+
 }
