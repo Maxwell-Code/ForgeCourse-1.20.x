@@ -1,0 +1,11 @@
+{
+  "values": [
+    "mccourse:draconite_block",
+    "mccourse:raw_draconite_block",
+    "mccourse:draconite_ore",
+    "mccourse:nether_draconite_ore",
+    "mccourse:end_stone_draconite_ore",
+    "mccourse:sound_block",
+    "mccourse:deepslate_draconite_ore"
+  ]
+}
