@@ -32,7 +32,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                                 ModBlocks.NETHER_DRACONITE_ORE.get(),
                                 ModBlocks.END_STONE_DRACONITE_ORE.get(),
                                 ModBlocks.SOUND_BLOCK.get(),
-                                ModBlocks.DEEPSLATE_DRACONITE_ORE.get()
+                                ModBlocks.DEEPSLATE_DRACONITE_ORE.get(),
+                                ModBlocks.DRACONITE_STAIRS.get(),
+                                ModBlocks.DRACONITE_SLAB.get()
                         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)

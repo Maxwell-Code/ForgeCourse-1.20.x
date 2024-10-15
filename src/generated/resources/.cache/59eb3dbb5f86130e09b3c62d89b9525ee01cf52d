@@ -1,7 +1,11 @@
-// 1.20.1	2024-10-13T14:02:37.263621	Loot Tables
+// 1.20.1	2024-10-14T20:31:52.2411283	Loot Tables
 e6952d6a5e192ba3b70d570b3c5cd09fe41514ef data/mccourse/loot_tables/blocks/deepslate_draconite_ore.json
 d94f280796083b8c4415af5bfb06ded5080926ba data/mccourse/loot_tables/blocks/draconite_block.json
+8b28da9a6ef31bf0a4054deb007b210b08323ff9 data/mccourse/loot_tables/blocks/draconite_button.json
 d34fd7ea3ba951edcbfdcfabd2a901e228bb9362 data/mccourse/loot_tables/blocks/draconite_ore.json
+e93575927b44a82f4b3949c9c8996eecad7642fd data/mccourse/loot_tables/blocks/draconite_pressure_plate.json
+8198cd6d224dbde3a1bca9fb9c48d2d03204ea59 data/mccourse/loot_tables/blocks/draconite_slab.json
+89d4c9fc650c1d8f9c23ec0198367ec50c10ccb8 data/mccourse/loot_tables/blocks/draconite_stairs.json
 f795b367326448ba4d3721da9c77d605d992e53c data/mccourse/loot_tables/blocks/end_stone_draconite_ore.json
 6f12811e36447b40feef72f4e36730ca95c5abfc data/mccourse/loot_tables/blocks/nether_draconite_ore.json
 3b2146f6e62073996eee799b1a3b2bbc4fe1cbe9 data/mccourse/loot_tables/blocks/raw_draconite_block.json

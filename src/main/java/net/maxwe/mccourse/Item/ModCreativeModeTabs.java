@@ -32,6 +32,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.NETHER_DRACONITE_ORE.get());
                         output.accept(ModBlocks.DRACONITE_ORE.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
+                        output.accept(ModBlocks.DRACONITE_SLAB.get());
+                        output.accept(ModBlocks.DRACONITE_STAIRS.get());
+                        output.accept(ModBlocks.DRACONITE_BUTTON.get());
+                        output.accept(ModBlocks.DRACONITE_PRESSURE_PLATE.get());
 
                     }).build());
 

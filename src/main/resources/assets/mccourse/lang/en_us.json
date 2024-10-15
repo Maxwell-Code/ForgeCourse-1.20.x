@@ -12,6 +12,10 @@
   "block.mccourse.nether_draconite_ore": "Nether Draconite Ore",
   "block.mccourse.end_stone_draconite_ore": "End Stone Draconite Ore",
   "block.mccourse.sound_block": "Sound Block",
+  "block.mccourse.draconite_stairs": "Draconite Stairs",
+  "block.mccourse.draconite_slab": "Draconite Slab",
+  "block.mccourse.draconite_pressure_plate": "Draconite Pressure Plate",
+  "block.mccourse.draconite_button": "Draconite Button",
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "Interact with a Block to Detect for valuables",
   "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more info",
