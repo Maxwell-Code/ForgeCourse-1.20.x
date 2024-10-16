@@ -32,15 +32,28 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
         buttonBlock(((ButtonBlock) ModBlocks.DRACONITE_BUTTON.get()), blockTexture(ModBlocks.DRACONITE_BLOCK.get()));
-        pressurePlateBlock((PressurePlateBlock) ModBlocks.DRACONITE_PRESSURE_PLATE.get(),
-                blockTexture(ModBlocks.DRACONITE_BLOCK.get()));
+        pressurePlateBlock((PressurePlateBlock) ModBlocks.DRACONITE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.DRACONITE_BLOCK.get()));
 
+        fenceBlock((FenceBlock) ModBlocks.DRACONITE_FENCE.get(), blockTexture(ModBlocks.DRACONITE_BLOCK.get()));
+        fenceGateBlock((FenceGateBlock) ModBlocks.DRACONITE_FENCE_GATE.get(), blockTexture(ModBlocks.DRACONITE_BLOCK.get()));
+        wallBlock((WallBlock) ModBlocks.DRACONITE_WALL.get(), blockTexture(ModBlocks.DRACONITE_BLOCK.get()));
+
+        doorBlockWithRenderType((DoorBlock)ModBlocks.DRACONITE_DOOR.get()
+                , modLoc("block/draconite_door_bottom"), modLoc("block/draconite_door_top"), "cutout");
+
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.DRACONITE_TRAPDOOR.get()
+                , modLoc("block/draconite_trapdoor"), true, "cutout");
 
         blockItem(ModBlocks.DRACONITE_STAIRS);
         blockItem(ModBlocks.DRACONITE_SLAB);
         blockItem(ModBlocks.DRACONITE_PRESSURE_PLATE);
+        blockItem(ModBlocks.DRACONITE_FENCE_GATE);
+        blockItem(ModBlocks.DRACONITE_TRAPDOOR, "_bottom");
     }
 
+    private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("mccourse:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
+    }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("mccourse:block/" + ForgeRegistries.BLOCKS.getKey

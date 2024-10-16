@@ -36,6 +36,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DRACONITE_STAIRS.get());
                         output.accept(ModBlocks.DRACONITE_BUTTON.get());
                         output.accept(ModBlocks.DRACONITE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.DRACONITE_FENCE_GATE.get());
+                        output.accept(ModBlocks.DRACONITE_FENCE.get());
+                        output.accept(ModBlocks.DRACONITE_WALL.get());
+                        output.accept(ModBlocks.DRACONITE_DOOR.get());
+                        output.accept(ModBlocks.DRACONITE_TRAPDOOR.get());
 
                     }).build());
 

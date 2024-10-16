@@ -27,11 +27,33 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PEAT_BRICK);
 
         buttonItem(ModBlocks.DRACONITE_BUTTON, ModBlocks.DRACONITE_BLOCK);
+        fenceItem(ModBlocks.DRACONITE_FENCE, ModBlocks.DRACONITE_BLOCK);
+        fenceItem(ModBlocks.DRACONITE_FENCE_GATE, ModBlocks.DRACONITE_BLOCK);
+        wallItem(ModBlocks.DRACONITE_WALL, ModBlocks.DRACONITE_BLOCK);
+
+        simpleBlockItem(ModBlocks.DRACONITE_DOOR);
+
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(MCCourseMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(MCCourseMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
                 .texture("texture",  new ResourceLocation(MCCourseMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MCCourseMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

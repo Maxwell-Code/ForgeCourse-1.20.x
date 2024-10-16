@@ -8,6 +8,11 @@
     "mccourse:sound_block",
     "mccourse:deepslate_draconite_ore",
     "mccourse:draconite_stairs",
+    "mccourse:draconite_wall",
+    "mccourse:draconite_fence_gate",
+    "mccourse:draconite_fence",
+    "mccourse:draconite_door",
+    "mccourse:draconite_trapdoor",
     "mccourse:draconite_slab"
   ]
 }

@@ -34,7 +34,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                                 ModBlocks.SOUND_BLOCK.get(),
                                 ModBlocks.DEEPSLATE_DRACONITE_ORE.get(),
                                 ModBlocks.DRACONITE_STAIRS.get(),
+                                ModBlocks.DRACONITE_WALL.get(),
+                                ModBlocks.DRACONITE_FENCE_GATE.get(),
+                                ModBlocks.DRACONITE_FENCE.get(),
+                                ModBlocks.DRACONITE_DOOR.get(),
+                                ModBlocks.DRACONITE_TRAPDOOR.get(),
                                 ModBlocks.DRACONITE_SLAB.get()
+
                         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -49,6 +55,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         (
                                 ModBlocks.DEEPSLATE_DRACONITE_ORE.get()
                         );
+
+        this.tag(BlockTags.FENCES)
+                .add
+                        (ModBlocks.DRACONITE_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add
+                        (ModBlocks.DRACONITE_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add
+                        (ModBlocks.DRACONITE_WALL.get());
 
     }
 

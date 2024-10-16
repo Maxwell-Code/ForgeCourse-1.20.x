@@ -24,6 +24,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DRACONITE_STAIRS.get());
         this.dropSelf(ModBlocks.DRACONITE_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.DRACONITE_BUTTON.get());
+        this.dropSelf(ModBlocks.DRACONITE_FENCE.get());
+        this.dropSelf(ModBlocks.DRACONITE_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.DRACONITE_WALL.get());
+        this.dropSelf(ModBlocks.DRACONITE_TRAPDOOR.get());
 
         this.add(ModBlocks.DRACONITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.DRACONITE_ORE.get(), ModItems.DRACONITE.get()));
@@ -39,6 +43,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.DRACONITE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.DRACONITE_SLAB.get()));
+
+        this.add(ModBlocks.DRACONITE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.DRACONITE_DOOR.get()));
     }
 
     @Override

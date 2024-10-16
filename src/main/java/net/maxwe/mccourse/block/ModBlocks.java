@@ -3,6 +3,7 @@ package net.maxwe.mccourse.block;
 import net.maxwe.mccourse.Item.ModItems;
 import net.maxwe.mccourse.MCCourseMod;
 import net.maxwe.mccourse.block.custom.SoundBlock;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -48,6 +49,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> DRACONITE_BUTTON = registerBlock("draconite_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).sound(SoundType.METAL),
                     BlockSetType.IRON, 20, true));
+
+    public static final RegistryObject<Block> DRACONITE_FENCE = registerBlock("draconite_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> DRACONITE_FENCE_GATE = registerBlock("draconite_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> DRACONITE_WALL = registerBlock("draconite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> DRACONITE_DOOR = registerBlock("draconite_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR), BlockSetType.IRON));
+    public static final RegistryObject<Block> DRACONITE_TRAPDOOR = registerBlock("draconite_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_TRAPDOOR), BlockSetType.IRON));
 
 
 

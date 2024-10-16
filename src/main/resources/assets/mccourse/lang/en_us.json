@@ -16,6 +16,11 @@
   "block.mccourse.draconite_slab": "Draconite Slab",
   "block.mccourse.draconite_pressure_plate": "Draconite Pressure Plate",
   "block.mccourse.draconite_button": "Draconite Button",
+  "block.mccourse.draconite_fence": "Draconite Fence",
+  "block.mccourse.draconite_fence_gate": "Draconite Fence Gate",
+  "block.mccourse.draconite_wall": "Draconite Wall",
+  "block.mccourse.draconite_door": "Draconite Door",
+  "block.mccourse.draconite_trapdoor": "Draconite Trapdoor",
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "Interact with a Block to Detect for valuables",
   "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more info",
