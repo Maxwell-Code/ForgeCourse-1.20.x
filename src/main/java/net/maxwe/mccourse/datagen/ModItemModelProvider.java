@@ -33,6 +33,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleBlockItem(ModBlocks.DRACONITE_DOOR);
 
+        handheldItem(ModItems.DRACONITE_AXE);
+        handheldItem(ModItems.DRACONITE_SHOVEL);
+        handheldItem(ModItems.DRACONITE_HOE);
+        handheldItem(ModItems.DRACONITE_PICKAXE);
+        handheldItem(ModItems.DRACONITE_SWORD);
+
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(MCCourseMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

@@ -56,6 +56,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                                 ModBlocks.DEEPSLATE_DRACONITE_ORE.get()
                         );
 
+        this.tag(ModTags.Blocks.NEEDS_DRACONITE_TOOL)
+                .add
+                        (
+                                ModBlocks.NETHER_DRACONITE_ORE.get()
+                        );
+
         this.tag(BlockTags.FENCES)
                 .add
                         (ModBlocks.DRACONITE_FENCE.get());

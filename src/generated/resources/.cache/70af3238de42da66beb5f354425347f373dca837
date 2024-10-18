@@ -1,5 +1,6 @@
-// 1.20.1	2024-10-16T09:43:10.3965352	Block Tags
+// 1.20.1	2024-10-18T13:49:16.057576	Block Tags
 7efa1613cfb4a876b0ffb8d5d052e411452459b8 data/mccourse/tags/blocks/metal_detector_valuables.json
+e56affce287cedadf7dc530fbc9c6ea17ffbfb0e data/mccourse/tags/blocks/needs_draconite_tool.json
 3a3fecc628c1ae3f6622a5d1a4fc7ea7a506825b data/minecraft/tags/blocks/fences.json
 a646ce0fa64cdcd8194e6eb2b9c0fc19374d22dd data/minecraft/tags/blocks/fence_gates.json
 5987a4fc104c2d98c5c72dd807df9c3d103c8cf6 data/minecraft/tags/blocks/mineable/pickaxe.json
